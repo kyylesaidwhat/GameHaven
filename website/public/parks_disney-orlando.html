@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Game Haven - Group 4</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Game Haven</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="games_main.html">Play</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parks_main.html">Theme Parks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parents.html">Parents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="educators.html">Educators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3"> 
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="parks_main.html">Theme Parks</a>
+      </li>
+      <li class="breadcrumb-item active">Disney Orlando</li>
+    </ol>
+
+    <!-- Intro Content -->
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="https://www.trbimg.com/img-5a82fa21/turbine/os-disney-price-increase-20180212" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Disney Orlando</h2>
+        <p>The Walt Disney World Resort is an entertainment complex in Bay Lake and Lake Buena Vista, Florida, in the United States, near the cities Orlando and Kissimmee.</p>
+        <p>Home to the Magic Kingdom, Epcot, Hollywood Studios, Animal Kingdom, Blizzard Beach and Typhoon Lagoon, the Walt Disney World Resort has something for everyone in the family to enjoy.</p>
+        <p></p>
+        <!-- Noscript content for added SEO -->
+	<noscript><a href="https://www.eventbrite.com/e/disney-world-orlando-tickets-61076652913" rel="noopener noreferrer" target="_blank"></noscript>
+	<!-- You can customize this button any way you like -->
+	<button id="eventbrite-widget-modal-trigger-61076652913" type="button">Buy Tickets</button>
+		<noscript></a>Buy Tickets on Eventbrite</noscript>
+		<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+		<script type="text/javascript">
+    			var exampleCallback = function() {
+        		console.log('Order complete!');
+    			};
+
+   	 		window.EBWidgets.createWidget({
+        		widgetType: 'checkout',
+        		eventId: '61076652913',
+        		modal: true,
+        		modalTriggerElementId: 'eventbrite-widget-modal-trigger-61076652913',
+        		onOrderComplete: exampleCallback
+    			});
+		</script>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Reviews -->
+    <h2>Consumer Reviews</h2>
+
+    <div class='embedsocial-reviews' data-ref="1e174a07e2bea471c30bfff572dfd0f060f883a2"></div>
+    <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} 
+	js = d.createElement(s); js.id = id; 
+	js.src = "https://embedsocial.com/embedscript/ri.js"; 
+	d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsScript"));</script>
+
+    <div class="embedsocial-collect" data-ref="Bfix9" > </div>
+    <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} 
+	js = d.createElement(s); js.id = id; 
+	js.src = "https://embedsocial.com/cdn/cs.js?v=2.0"; 
+	d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsCollectScript"));</script>
+    
+    <p></p>
+    <h2>Send Us your Pictures</h2>
+    <p>To better show everyone the fun and exciting adventures you can have at all these amusement parks, you can send any photos you like for the world to see. Any photos you submit must fall within our photo/images policy. They can be removed at any time with your discretion.</p>    
+
+    <button id="upload_widget" class="cloudinary-button">Upload files</button>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>  
+
+    <script type="text/javascript">  
+    var myWidget = cloudinary.createUploadWidget({
+  	cloudName: 'dkvsni1qj', 
+  	uploadPreset: 'ml_default'}, (error, result) => { 
+   	if (!error && result && result.event === "success") { 
+      	console.log('Done! Here is the image info: ', result.info); 
+    	}
+  	})
+
+    document.getElementById("upload_widget").addEventListener("click", function(){
+    	myWidget.open();
+  	}, false);
+    </script>
+    <p></p>
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">COSC412.101 | Group 4: Artemio, Kirsten, Ksenia, Kyle, Nicholas, Ryan</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script async src="//static.zotabox.com/0/1/01b127186d55faf953f9795888fbf404/widgets.js"></script>
+
+</body>
+
+</html>
